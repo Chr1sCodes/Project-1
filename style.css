@@ -7,7 +7,8 @@
   --muted: #a6b6bf;
   --accent: #9cd5ab;
   --accent-strong: #2bb046;
-  --accent-soft: rgba(255, 122, 24, 0.12);
+  --accent-soft: rgba(43, 176, 70, 0.14);
+  --accent-glow: rgba(43, 176, 70, 0.35);
   --line: rgba(255, 255, 255, 0.08);
   --shadow: rgba(10, 15, 20, 0.28);
 }
@@ -101,13 +102,13 @@ img {
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #1a120d;
   font-weight: 800;
-  box-shadow: 0 12px 28px rgba(255, 122, 24, 0.35);
+  box-shadow: 0 12px 28px var(--accent-glow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 16px 30px rgba(255, 122, 24, 0.4);
+  box-shadow: 0 16px 30px rgba(43, 176, 70, 0.4);
 }
 
 .button-small {
@@ -239,7 +240,7 @@ img {
   margin-top: 1.5rem;
   padding: 1rem 0.75rem 0.5rem;
   border-radius: 1.1rem;
-  background: linear-gradient(180deg, rgba(255, 122, 24, 0.08), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(43, 176, 70, 0.08), rgba(255, 255, 255, 0.02));
   border: 1px solid var(--line);
 }
 
@@ -249,6 +250,13 @@ img {
   background: linear-gradient(180deg, var(--accent-strong), var(--accent));
   border-radius: 999px 999px 0 0;
 }
+
+.chart-bar-32 { height: 32%; }
+.chart-bar-45 { height: 45%; }
+.chart-bar-60 { height: 60%; }
+.chart-bar-75 { height: 75%; }
+.chart-bar-90 { height: 90%; }
+.chart-bar-100 { height: 100%; }
 
 .coach-card {
   display: flex;
@@ -363,7 +371,7 @@ img {
 
 .brand-row {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   align-items: center;
   padding: 1.5rem;
@@ -413,7 +421,7 @@ img {
 }
 
 .program-card.accent {
-  background: linear-gradient(180deg, rgba(255, 122, 24, 0.18), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(43, 176, 70, 0.18), rgba(255, 255, 255, 0.02));
 }
 
 .program-icon {
@@ -485,8 +493,8 @@ img {
 }
 
 .price-card.featured {
-  background: linear-gradient(180deg, rgba(255, 122, 24, 0.16), rgba(255, 255, 255, 0.04));
-  border-color: rgba(255, 122, 24, 0.4);
+  background: linear-gradient(180deg, rgba(43, 176, 70, 0.16), rgba(255, 255, 255, 0.04));
+  border-color: rgba(43, 176, 70, 0.4);
   transform: translateY(-8px);
 }
 
@@ -494,7 +502,7 @@ img {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: rgba(255, 122, 24, 0.18);
+  background: var(--accent-soft);
   color: var(--accent-strong);
   border-radius: 999px;
   font-size: 0.72rem;
@@ -618,8 +626,8 @@ img {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid rgba(255, 122, 24, 0.5);
-  border-color: rgba(255, 122, 24, 0.6);
+  outline: 2px solid rgba(43, 176, 70, 0.5);
+  border-color: rgba(43, 176, 70, 0.6);
 }
 
 .contact-form .button {
@@ -639,8 +647,8 @@ img {
   gap: 1.5rem;
   padding: 2rem 2.2rem;
   border-radius: 1.5rem;
-  background: linear-gradient(135deg, rgba(255, 122, 24, 0.18), rgba(255, 255, 255, 0.04));
-  border: 1px solid rgba(255, 122, 24, 0.25);
+  background: linear-gradient(135deg, rgba(43, 176, 70, 0.18), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(43, 176, 70, 0.25);
 }
 
 .site-footer {

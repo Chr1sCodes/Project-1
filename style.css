@@ -475,6 +475,86 @@ img {
   font-size: 0.8rem;
 }
 
+.contact {
+  padding: 0 0 5rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+}
+
+.contact-copy p:last-child {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1.4rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.contact-form span {
+  font-size: 0.92rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(11, 16, 22, 0.74);
+  border-radius: 0.9rem;
+  padding: 0.9rem 1rem;
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(166, 182, 191, 0.9);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(255, 122, 24, 0.5);
+  border-color: rgba(255, 122, 24, 0.6);
+}
+
+.contact-form .button {
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
 .cta {
   padding: 0 0 5rem;
 }
@@ -514,6 +594,7 @@ img {
 @media (max-width: 900px) {
   .hero-layout,
   .results-layout,
+  .contact-layout,
   .cta-box {
     grid-template-columns: 1fr;
     display: grid;
@@ -523,7 +604,8 @@ img {
   .pricing-grid,
   .testimonial-grid,
   .brand-row,
-  .result-metrics {
+  .result-metrics,
+  .field-row {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -541,7 +623,8 @@ img {
   .pricing-grid,
   .testimonial-grid,
   .brand-row,
-  .result-metrics {
+  .result-metrics,
+  .field-row {
     grid-template-columns: 1fr;
   }
 

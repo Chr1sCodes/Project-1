@@ -57,8 +57,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 78px;
+  min-height: 92px;
   gap: 1rem;
+  padding: 0 1.25rem;
 }
 
 .brand {
@@ -84,7 +85,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.25rem;
   color: var(--muted);
   font-size: 0.96rem;
 }

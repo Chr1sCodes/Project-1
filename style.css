@@ -8,7 +8,7 @@
   --accent: #9cd5ab;
   --accent-strong: #2bb046;
   --accent-soft: rgba(43, 176, 70, 0.14);
-  --accent-glow: rgba(43, 176, 70, 0.35);
+  --accent-glow: rgba(43, 176, 70, 0.26);
   --line: rgba(255, 255, 255, 0.08);
   --shadow: rgba(10, 15, 20, 0.28);
 }
@@ -109,7 +109,7 @@ img {
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 16px 30px rgba(43, 176, 70, 0.4);
+  box-shadow: 0 16px 30px rgba(43, 176, 70, 0.3);
 }
 
 .button-small {

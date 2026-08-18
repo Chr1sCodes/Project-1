@@ -288,6 +288,79 @@ img {
   padding: 1.2rem 0 0;
 }
 
+.training-gallery {
+  padding: 5rem 0 1rem;
+}
+
+.gallery-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-heading h2 {
+  max-width: 620px;
+  margin-bottom: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.gallery-heading > p {
+  max-width: 280px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.training-photo {
+  position: relative;
+  min-height: 300px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1.4rem;
+  background: var(--panel);
+}
+
+.training-photo-tall {
+  min-height: 390px;
+}
+
+.training-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.training-photo:hover img {
+  transform: scale(1.04);
+}
+
+.training-photo::after {
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(180deg, transparent, rgba(7, 12, 16, 0.8));
+  content: "";
+}
+
+.training-photo figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
 .brand-row {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -603,6 +676,7 @@ img {
   .program-grid,
   .pricing-grid,
   .testimonial-grid,
+  .gallery-grid,
   .brand-row,
   .result-metrics,
   .field-row {
@@ -611,6 +685,12 @@ img {
 
   .main-nav {
     display: none;
+  }
+
+  .gallery-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 }
 
@@ -622,6 +702,7 @@ img {
   .program-grid,
   .pricing-grid,
   .testimonial-grid,
+  .gallery-grid,
   .brand-row,
   .result-metrics,
   .field-row {
@@ -638,5 +719,10 @@ img {
   .button,
   .button-small {
     width: 100%;
+  }
+
+  .training-photo,
+  .training-photo-tall {
+    min-height: 280px;
   }
 }

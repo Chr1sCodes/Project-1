@@ -1,11 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
-</head>
-<body>
-    <h1>Pizza Website</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Forge Fitness helps busy people build strength, improve endurance, and feel better with expert coaching and flexible training plans."
+    />
+    <title>Forge Fitness | Train Stronger Every Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <div class="brand">
+          <span class="brand-mark">F</span>
+          <span>Forge Fitness</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#programs">Programs</a>
+          <a href="#results">Results</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#testimonials">Reviews</a>
+        </nav>
+        <a href="#pricing" class="button button-small">Join now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Built for real life</p>
+            <h1>Train with purpose. Feel stronger every week.</h1>
+            <p class="lead">
+              Personalized coaching, strength programs, and community energy to help
+              you move better, perform stronger, and feel your best.
+            </p>
+            <div class="hero-actions">
+              <a href="#pricing" class="button">Get started</a>
+              <a href="#results" class="button button-secondary">View results</a>
+            </div>
+            <ul class="trust-list" aria-label="Key benefits">
+              <li>1:1 coaching</li>
+              <li>Flexible routines</li>
+              <li>Progress tracking</li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Fitness coaching overview">
+            <div class="card-badge">New member offer</div>
+            <div class="stats-panel">
+              <div>
+                <strong>4.9/5</strong>
+                <span>Average rating</span>
+              </div>
+              <div>
+                <strong>12k+</strong>
+                <span>Members coached</span>
+              </div>
+            </div>
+            <div class="mini-chart" aria-hidden="true">
+              <span style="height: 32%"></span>
+              <span style="height: 45%"></span>
+              <span style="height: 60%"></span>
+              <span style="height: 75%"></span>
+              <span style="height: 90%"></span>
+              <span style="height: 100%"></span>
+            </div>
+            <div class="coach-card">
+              <div class="coach-avatar">AJ</div>
+              <div>
+                <p>Coach AJ</p>
+                <small>Strength & conditioning</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-proof">
+        <div class="container brand-row" aria-label="Featured fitness partners and brands">
+          <span>FitJournal</span>
+          <span>ActiveLife</span>
+          <span>Wellness Daily</span>
+          <span>MoveWell</span>
+          <span>Peak Labs</span>
+        </div>
+      </section>
+
+      <section class="programs" id="programs">
+        <div class="container section-heading">
+          <p class="eyebrow">Choose your path</p>
+          <h2>Programs designed for your goals.</h2>
+        </div>
+        <div class="container program-grid">
+          <article class="program-card accent">
+            <div class="program-icon">🏋️</div>
+            <h3>Strength Builder</h3>
+            <p>
+              Build muscle, improve performance, and master efficient lifting patterns.
+            </p>
+            <ul>
+              <li>3x weekly workouts</li>
+              <li>Progressive overload</li>
+              <li>Weekly check-ins</li>
+            </ul>
+          </article>
+
+          <article class="program-card">
+            <div class="program-icon">🔥</div>
+            <h3>Fat Loss Engine</h3>
+            <p>
+              Lose body fat and build energy through nutrition coaching and training.
+            </p>
+            <ul>
+              <li>Meal guidance</li>
+              <li>Cardio + lifts</li>
+              <li>Habit tracking</li>
+            </ul>
+          </article>
+
+          <article class="program-card">
+            <div class="program-icon">⚡</div>
+            <h3>Performance Lab</h3>
+            <p>
+              Push your endurance and athletic output with expert periodized plans.
+            </p>
+            <ul>
+              <li>Mobility support</li>
+              <li>Endurance blocks</li>
+              <li>Recovery planning</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="results" id="results">
+        <div class="container results-layout">
+          <div>
+            <p class="eyebrow">Why members stay</p>
+            <h2>Real progress. Real routines. Real results.</h2>
+          </div>
+          <div class="result-metrics">
+            <div>
+              <strong>83%</strong>
+              <span>reported better energy in 8 weeks</span>
+            </div>
+            <div>
+              <strong>6.2x</strong>
+              <span>more likely to hit weekly goals</span>
+            </div>
+            <div>
+              <strong>90%</strong>
+              <span>maintain their plan after 3 months</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container section-heading">
+          <p class="eyebrow">Simple pricing</p>
+          <h2>Choose the plan that matches your momentum.</h2>
+        </div>
+
+        <div class="container pricing-grid">
+          <article class="price-card">
+            <p class="plan-name">Starter</p>
+            <div class="price">$39<span>/mo</span></div>
+            <ul>
+              <li>Workout library access</li>
+              <li>2 coaching check-ins</li>
+              <li>Nutrition basics</li>
+            </ul>
+            <a href="#" class="button button-secondary">Start now</a>
+          </article>
+
+          <article class="price-card featured">
+            <div class="popular-tag">Most popular</div>
+            <p class="plan-name">Transformation</p>
+            <div class="price">$79<span>/mo</span></div>
+            <ul>
+              <li>Personalized training plan</li>
+              <li>Weekly coach feedback</li>
+              <li>Progress tracking dashboard</li>
+            </ul>
+            <a href="#" class="button">Get started</a>
+          </article>
+
+          <article class="price-card">
+            <p class="plan-name">Elite</p>
+            <div class="price">$129<span>/mo</span></div>
+            <ul>
+              <li>1:1 coaching sessions</li>
+              <li>Custom nutrition strategy</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#" class="button button-secondary">Book consult</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container section-heading">
+          <p class="eyebrow">Member stories</p>
+          <h2>People feel stronger, leaner, and more confident.</h2>
+        </div>
+
+        <div class="container testimonial-grid">
+          <article class="testimonial-card">
+            <p>
+              “I lost 14 pounds in 3 months without feeling like I was on a crash diet.
+              The plan fit my schedule and the coaching kept me accountable.”
+            </p>
+            <div class="person">
+              <div class="avatar">MS</div>
+              <div>
+                <strong>Maya S.</strong>
+                <span>Marketing manager</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p>
+              “The programming is clear, challenging, and realistic. My strength is up,
+              my recovery is better, and I finally feel consistent.”
+            </p>
+            <div class="person">
+              <div class="avatar">JT</div>
+              <div>
+                <strong>Jordan T.</strong>
+                <span>Product designer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p>
+              “I joined for the workouts and stayed for the community. Forge helped me
+              build habits I can actually keep long-term.”
+            </p>
+            <div class="person">
+              <div class="avatar">AR</div>
+              <div>
+                <strong>Amelia R.</strong>
+                <span>Teacher</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow">Start today</p>
+            <h2>Build a stronger body without losing your routine.</h2>
+          </div>
+          <a href="#pricing" class="button">Claim your free trial</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div class="brand footer-brand">
+          <span class="brand-mark">F</span>
+          <span>Forge Fitness</span>
+        </div>
+        <p>© <span id="year"></span> Forge Fitness</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -310,6 +310,25 @@ img {
   padding: 1.2rem 0 0;
 }
 
+.social-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.social-proof-grid span {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  text-align: center;
+}
+
 .training-gallery {
   padding: 5rem 0 1rem;
 }
@@ -699,6 +718,7 @@ img {
   .pricing-grid,
   .testimonial-grid,
   .gallery-grid,
+  .social-proof-grid,
   .brand-row,
   .result-metrics,
   .field-row {
@@ -725,6 +745,7 @@ img {
   .pricing-grid,
   .testimonial-grid,
   .gallery-grid,
+  .social-proof-grid,
   .brand-row,
   .result-metrics,
   .field-row {
